@@ -13,21 +13,21 @@
           <article class="column is-4 i1">
             <div>
               <figure class="image is-square">
-                <img src="/palm.jpg" >
+                <img src="/img/palm.jpg" >
               </figure>
             </div>
           </article>
           <article class="column is-4 i2">
             <div>
               <figure class="image is-square">
-                <img src="/light.jpg" >
+                <img src="/img/light.jpg" >
               </figure>
             </div>
           </article>
           <article class="column is-4 i3">
             <div>
               <figure class="image is-square">
-                <img src="/olaa2.jpg" >
+                <img src="/img/olaa2.jpg" >
               </figure>
             </div>
           </article>

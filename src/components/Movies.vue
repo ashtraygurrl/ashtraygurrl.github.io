@@ -5,7 +5,7 @@
         <article class="movie-item-main">
           <div>
             <figure class="image is-3by4">
-              <img class="movie-1" src="/clueless.jpg">
+              <img class="movie-1" src="/img/clueless.jpg">
             </figure>
           </div>
           <div class="title-1">
@@ -16,7 +16,7 @@
          <article class="item-2">
           <div>
             <figure class="imagee is-3by4">
-              <img class="movie-2" src="/robot.jpg">
+              <img class="movie-2" src="/img/robot.jpg">
             </figure>
           </div>
           <div class="title-2">
@@ -27,7 +27,7 @@
         <article class="item-3">
           <div>
             <figure class="imageee is-3by4">
-              <img class="movie-3" src="/gossip.jpg">
+              <img class="movie-3" src="/img/gossip.jpg">
             </figure>
           </div>
           <div class="title-3">

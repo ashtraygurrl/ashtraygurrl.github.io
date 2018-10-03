@@ -13,7 +13,7 @@
           </div>
           <div>
             <figure class="image is-3by4">
-              <img class="band-1" src="/placebo.jpg" >
+              <img class="band-1" src="/img/placebo.jpg" >
             </figure>
           </div>
         </article>
@@ -31,7 +31,7 @@
           </div>       
           <div>
             <figure class="image is-3by2">
-              <img class="band-2" src="/antics.jpg" >
+              <img class="band-2" src="/img/antics.jpg" >
             </figure>
           </div>
         </article>
