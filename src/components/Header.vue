@@ -1,98 +1,82 @@
 <template>
-<header class="hero is-fullheight">
-    <div class="hero-head">
-        <nav class="navbar">
-            <div class="container">
-                <div class="navbar-end">
-                    <a class="navbar-item active" href="#">home</a>
-                    <a class="navbar-item" href="#">gallery</a>
-                    <a class="navbar-item" href="#">contact</a>              
-                </div>
-            </div>    
-        </nav>
+  <header class="home-header">
+    <div class="home-header__background">
+      <lines/>
     </div>
-    <section class="hero-body">
-        <nav class="social-icons">
-            <a href="#">
-                <span class="icon-facebook"></span>
-            </a>
-            <a href="#">
-                <span class="icon-instagram"></span>
-            </a>
-            <a href="#">
-                <span class="icon-spotify"></span>
-            </a>
-        </nav>
-        <div class="container">
+    <Nav class="home-header__nav"/>
+    <section class="home-header__content">
+      <div class="container">
+        <div class="columns">
+          <article class="column is-9 hero-title">
             <h1 class="title name"> Guadalupe</h1>
+          </article>
+          <article class="column is-6 image">
+            <img class="title image" src="./rat.jpg" >
+          </article>
         </div>
+      </div>
     </section>
-</header>
+  </header>
 </template>
+
 <style lang="scss" scoped>
 @import '../styles/_colors';
 @import '../styles/_icons';
 @import '~bulma/bulma.sass';
 
-.hero {
-    background-color: $white;
+.home-header {
+  @extend .hero;
+  @extend .is-fullheight;
+  position: relative;
 
-    &-body {
-        position: relative;
-    }
+  &__nav {
+    @extend .hero-head;
+  }
 
-    &-body {
-        height: 100%;
-    }
+  &__content {
+    @extend .hero-body;
+  }
+
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .columns {
+    align-items: flex-end;
+  }
+}
+
+.image {
+  position: relative;
+  z-index: -1;
+  margin-left: calc(-16.667%  - 17px);
+}
+
+
+.hero-title {
+  margin-bottom: 10%;
 }
 
 .name {
-    font-family: 'RNS Miles', sans-serif;
-    font-size: 120px;
-    text-transform: uppercase;
-    letter-spacing: 24px;
-}
-
-a.navbar-item {
-    background-color: transparent;
-    color: $black;
-    font-family: 'RNS Miles', sans-serif;
-    font-size: 50px;
-    position: relative;
-    text-decoration: none;
-    transition: transform 150ms ease-in;
-
-    &:hover {
-        background-color: transparent;
-        color: $black;
-        transform: scale(1.05);
-    }
-
-    &.active:before {
-        background-color: $black;
-        box-sizing: border-box;
-        content: '';
-        display: block;
-        height: 3px;
-        left: 50%;
-        position: absolute;
-        top: 40%;
-        width: 100%;
-        transform: rotate(-10deg) translate(-50%, -50%);
-        transform-origin: 50% 50%;
-    }
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    position: absolute;
-    top: 40px;
-    font-size: 80px;
-
-    a {
-        color: $black;
-    }
+  font-family: 'RNS Miles', sans-serif;
+  font-size: 120px;
+  text-transform: uppercase;
+  letter-spacing: 24px;
 }
 </style>
+
+<script>
+import Nav from './Nav.vue'
+import Lines from './background/Lines'
+export default {
+  components: {
+    Lines,
+    Nav
+  }
+}
+</script>
+
