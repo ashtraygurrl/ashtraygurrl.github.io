@@ -53,7 +53,7 @@
 .image {
   position: relative;
   z-index: -1;
-  margin-left: calc(-16.667%  - 17px);
+  margin-left: calc(-16.667%  - 16px);
 }
 
 
